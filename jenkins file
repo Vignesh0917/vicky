@@ -27,7 +27,7 @@ pipeline {
 
        stage('Deploy') {
     steps {
-        sshagent(credentials: ['sla32']) {
+        sshagent(credentials: ['a1']) {
             sh '''
                 echo "Deploying artifact to remote server..."
             '''
